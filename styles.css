@@ -20,8 +20,6 @@ h1 {
 
 h2 {
     font-family: "Rubik Scribble", system-ui;
-    /* font-family: "Rubik Burned", system-ui; */
-    /* font-weight: 400; */
     font-size: 2em;
 }
 
@@ -30,25 +28,15 @@ h3 {
     font-weight: 900;
     color: #E03702;
     font-size: 1em;
-    /* background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    margin-right: 200px; */
 }
-
-/* h3.switch {
-    color: #65D16C;
-} */
 
 /* Page styling */
 body {
     background-color: #FFCDCD;
     color: #3C413D;
     transition: all 1s;
-    /* font-family: "Space Mono", monospace; */
     font-family: "Rubik", sans-serif;
     font-weight: 400;
-    /* font-size: 1.3em; */
 }
 
 body.switch {
@@ -82,11 +70,7 @@ header.switch {
     width: 1080px;
     height: 400px;
     margin: auto;
-    /* background-color: rgb(235, 235, 235); */
     background-image: url(images/banner1.png);
-    /* background-size: 100%;
-    background-repeat: no-repeat;
-    padding-bottom: 390px; */
     color: #333;
     overflow: hidden;
     display: grid;
@@ -105,17 +89,10 @@ main {
     display: flex;
     justify-content: space-between;
     margin: 1em auto;
-    /* background-color: white; */
-    /* border: solid 2px white;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-right: 20px; */
 }
 
 main section {
     flex: 1;
-    /* border: groove 1px white; */
-    /* background-color: white; */
     border-radius: 20px;
     margin: 0 .25em;
     padding: 1em;
