@@ -1,0 +1,194 @@
+/* CSS Resets */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+header {
+    color: #E03702;
+}
+
+h1 {
+    font-family: "Rubik Spray Paint", system-ui;
+    font-weight: 400;
+    font-size: 4.3em;
+}
+
+h2 {
+    font-family: "Rubik Scribble", system-ui;
+    /* font-family: "Rubik Burned", system-ui; */
+    /* font-weight: 400; */
+    font-size: 2em;
+}
+
+h3 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 900;
+    color: #E03702;
+    font-size: 1em;
+    /* background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-right: 200px; */
+}
+
+/* h3.switch {
+    color: #65D16C;
+} */
+
+/* Page styling */
+body {
+    background-color: #FFCDCD;
+    color: #3C413D;
+    transition: all 1s;
+    /* font-family: "Space Mono", monospace; */
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    /* font-size: 1.3em; */
+}
+
+body.switch {
+    color: white;
+    background-color: black;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    /* make sure the columns don't get too small and text stays readable */
+    min-width: 900px;
+    margin: 1em auto;
+    padding-top: 2em;
+}
+
+header {
+    text-align: center;
+    line-height: 10px;
+    margin: 0 auto 2em auto;
+}
+
+header.switch {
+    color:#65D16C;
+}
+
+#banner {
+    position: relative;
+    display: flex;
+    width: 1080px;
+    height: 400px;
+    margin: auto;
+    /* background-color: rgb(235, 235, 235); */
+    background-image: url(images/banner1.png);
+    /* background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 390px; */
+    color: #333;
+    overflow: hidden;
+    display: grid;
+	place-items: center;
+}
+
+#banner.switch {
+    /* background-color: #333; */
+    background-image: url(images/banner2.png);
+    background-size: 100%;
+    color: rgb(235, 235, 235);
+    transition: all 1s;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em auto;
+    /* background-color: white; */
+    /* border: solid 2px white;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px; */
+}
+
+main section {
+    flex: 1;
+    /* border: groove 1px white; */
+    /* background-color: white; */
+    border-radius: 20px;
+    margin: 0 .25em;
+    padding: 1em;
+    margin-left: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ol, nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+section li {
+    padding-left: 1.2em;
+}
+
+section a {
+    line-height: 1.1em;
+    display: inline-block;
+    padding: .5em;
+    color: black;
+}
+
+section a:hover {
+    background-color: #E03702;
+    border-radius: 10px;
+    color: white;
+}
+
+section.switch a {
+    color: white;
+}
+
+section.switch a:hover {
+    background-color: #65D16C;
+    color: black;
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 12px;
+    background-color: #E03702;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+button.switch {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+button.switch:hover {
+    background-color: #E03702;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+/* 
+@font-face{
+    font-family: "Magazine-Letters";
+    src: url(fonts/MagazineLetterByBrntlbrnl-Regular.ttf);
+} */
