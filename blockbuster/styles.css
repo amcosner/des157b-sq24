@@ -1,0 +1,90 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    /* background-color: #CCF0F3; */
+    background-color: white;
+    font-family: "Magazine-Letters", Arial, sans-serif;
+    color: black;
+}
+
+.fa-maximize{
+    position:absolute;
+    z-index: 5;
+    top: 10%;
+    right: 5%;
+    font-size: 200%;
+    color: orange;
+}
+
+.fa-maximize:hover{
+    cursor: pointer;
+}
+
+/* audio {
+    margin-right: 400px;
+    margin-left: 20px;
+} */
+
+#room1{
+    position: fixed;
+    /* justify-content: center; */
+    /* right: 400;
+    bottom: 100; */
+    margin-left: 150px;
+    min-width: 76%;
+    min-height: 76%;
+    z-index: -1;
+}
+
+#lyrics p {
+    position: absolute;
+    padding: 1em;
+    font-size: 2em;
+    background-color: white;
+    color: black;
+    transition: all 2.5s;
+}
+
+#line1 {
+    bottom: 0%;
+    left: 0%;
+}
+
+#line2 {
+    bottom: 10%;
+    left: 10%;
+}
+
+#line3 {
+    bottom: 20%;
+    left: 20%;
+}
+
+/* .gg-bot {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    color: orange;
+}
+
+.gg-bot {
+    cursor: pointer;
+} */
+
+@font-face{
+    font-family: "Magazine-Letters";
+    src: url(fonts/MagazineLetterByBrntlbrnl-Regular.ttf);
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.showing {
+    opacity: 1;
+}
