@@ -7,8 +7,11 @@
 body {
     /* background-color: #CCF0F3; */
     background-color: white;
-    font-family: "Magazine-Letters", Arial, sans-serif;
-    color: black;
+}
+
+@font-face{
+    font-family: "Magazine-Letters";
+    src: url(font/MagazineLetterByBrntlbrnl-Regular.ttf);
 }
 
 .fa-maximize{
@@ -23,6 +26,23 @@ body {
 .fa-maximize:hover{
     cursor: pointer;
 }
+
+/* .fa-star{
+    position:absolute;
+    z-index: 5;
+    top: 20%;
+    right: 5%;
+    font-size: 200%;
+    color: orange;
+}
+
+.fa-star:hover{
+    cursor: pointer;
+}
+
+video.switch{
+    filter: saturate(70%);
+} */
 
 /* audio {
     margin-right: 400px;
@@ -42,27 +62,90 @@ body {
 
 #lyrics p {
     position: absolute;
-    padding: 1em;
-    font-size: 2em;
-    background-color: white;
+    /* font-family: "VT323", monospace; */
+    font-weight: 400;
+    font-family: "Magazine-Letters", system-ui, Arial;
+    padding: 20px;
+    font-size: 3em;
     color: black;
-    transition: all 2.5s;
+    transition: all 2s;
 }
 
 #line1 {
-    bottom: 0%;
-    left: 0%;
+    bottom: 10%;
+    left: 10%;
+    background-color: #FFA8A8;
+    transform: rotate(-2deg);
 }
 
 #line2 {
-    bottom: 10%;
-    left: 10%;
+    bottom: 13%;
+    left: 25%;
+    background-color: #E9EEAF;
+    transform: rotate(2deg);
 }
 
 #line3 {
+    bottom: 15%;
+    left: 40%;
+    background-color: #BFE4FF;
+    transform: rotate(-3deg);
+}
+
+#line4 {
+    bottom: 12%;
+    left: 50%;
+    background-color: #FFA8A8;
+    transform: rotate(4deg);
+}
+
+#line5 {
+    bottom: 11%;
+    left: 63%;
+    background-color: #BFE4FF;
+    transform: rotate(-3deg);
+}
+
+#line6 {
+    bottom: 10%;
+    left: 10%;
+    background-color: #E9EEAF;
+    transform: rotate(-2deg);
+}
+
+#line7 {
+    bottom: 12%;
+    left: 20%;
+    transform: rotate(2deg);
+    background-color: #FFA8A8;
+}
+
+#line8 {
+    bottom: 15%;
+    left: 30%;
+    background-color: #BFE4FF;
+    transform: rotate(-3deg);
+}
+
+#line9 {
+    bottom: 13%;
+    left: 55%;
+    background-color: #FFA8A8;
+    transform: rotate(4deg);
+}
+
+#line10 {
+    bottom: 11%;
+    left: 75%;
+    background-color: #E9EEAF;
+    transform: rotate(-3deg);
+}
+
+/* #line11 {
     bottom: 20%;
     left: 20%;
-}
+    background-color: #BFE4FF;
+} */
 
 /* .gg-bot {
     position: absolute;
@@ -75,11 +158,6 @@ body {
 .gg-bot {
     cursor: pointer;
 } */
-
-@font-face{
-    font-family: "Magazine-Letters";
-    src: url(fonts/MagazineLetterByBrntlbrnl-Regular.ttf);
-}
 
 .hidden {
     opacity: 0;

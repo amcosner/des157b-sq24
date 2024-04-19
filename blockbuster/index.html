@@ -6,9 +6,10 @@
     <title>Blockbuster Video</title>
     <!-- normalizing script -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    <!-- link to robot icon -->
-    <!-- <link href='https://unpkg.com/css.gg@2.0.0/icons/css/bot.css' rel='stylesheet'> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <!--styles -->
     <link href="styles.css" rel="stylesheet">
     <!-- script -->
@@ -22,26 +23,28 @@
     </audio> -->
 
     <video id="room1" controls muted autoplay loop playsinline>
-        <source src="media/room1.webm" type="video/webm">
-        <source src="media/room1.mp4" type="video/mp4">
+        <source src="media/room1.webm" id="vid1" type="video/webm">
+        <source src="media/room1.mp4" id="vid2" type="video/mp4">
 
         <p>Your browser doesn't support HTML5 video. 
             Here's a <a href="media/room1.mp4">link</a> to the video instead. </p>
     </video>
     <i class="fa-solid fa-maximize"></i>
+    <!-- <i class="fa-regular fa-star"></i> -->
+    <!-- <i class="fa-solid fa-forward"></i> -->
     <section id="lyrics">
-        <p id="line1" class="hidden">it's good</p>
-        <p id="line2" class="hidden">to lie down</p>
-        <p id="line3" class="hidden">in my</p>
-        <p id="line4" class="hidden">favorite little room!</p>
+        <p id="line1" class="hidden">it's</p>
+        <p id="line2" class="hidden">nice</p>
+        <p id="line3" class="hidden">to</p>
+        <p id="line4" class="hidden">lay</p>
+        <p id="line5" class="hidden">down</p>
 
-        <p id="line5" class="hidden">i don't have anything</p>
-        <p id="line6" class="hidden">to do. i'm just </p>
-        <p id="line7" class="hidden">wasting my time.</p>
+        <p id="line6" class="hidden">in</p>
+        <p id="line7" class="hidden">my</p>
+        <p id="line8" class="hidden">favorite</p>
 
-        <p id="line8" class="hidden">i don't want this</p>
-        <p id="line9" class="hidden">boring day of mine</p>
-        <p id="line10" class="hidden">to be disturbed.</p>
+        <p id="line9" class="hidden">little</p>
+        <p id="line10" class="hidden">room !</p>
     </section>
 </body>
 </html>
