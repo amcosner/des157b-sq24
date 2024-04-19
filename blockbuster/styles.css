@@ -27,22 +27,34 @@ body {
     cursor: pointer;
 }
 
-/* .fa-star{
-    position:absolute;
-    z-index: 5;
-    top: 20%;
-    right: 5%;
-    font-size: 200%;
+/* .fa-star {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 48px;
     color: orange;
+    transform: translate(-50%, -50%);
+    animation: star 2s infinite ease-in-out;
 }
 
-.fa-star:hover{
-    cursor: pointer;
-}
-
-video.switch{
-    filter: saturate(70%);
+@keyframes star {
+    0% {
+      opacity: .5;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: .5;
+      transform: scale(1.5);
+    }
 } */
+
+
+/* video.switch{
+    filter: saturate(70%);
+}  */
 
 /* audio {
     margin-right: 400px;

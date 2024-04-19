@@ -3,7 +3,7 @@
     console.log('reading');
     const fscreen = document.querySelector('.fa-maximize');
     // const forward = document.querySelector('.fa-forward');
-    const star = document.querySelector('fa-star');
+    // const loading = document.querySelector('.fa-star');
     let mode = 'dark';
     const room1 = document.querySelector('#room1');
     const line1 = document.querySelector('#line1');
@@ -105,6 +105,10 @@
         }
     });
 
+    // video.addEventListener('playing', function() {
+    //   loading.style.display = 'none';
+    // })
+
     // star.addEventListener('click',function(){
     //         if (mode === 'dark') {
     //             video.className = 'switch';
@@ -114,10 +118,6 @@
     //             mode = 'dark'
     //         }
     // })
-
-    // video.addEventListener('playing', function() {
-    //     loading.style.display = 'none';
-    //     });
 
     // star.addEventListener('click', function() {
     //     if (mode === 'dark') {
