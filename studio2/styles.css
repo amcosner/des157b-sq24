@@ -1,0 +1,24 @@
+body {
+    background-image: url(images/oranges.png);
+    background-size: 130vh;
+}
+
+#characters {
+    background-color: url(images/characters.png);
+    background-size: 130vh;
+}
+
+p {
+    padding: 60px;
+    background-color: white;
+    color: black;
+}
+
+/* h1 {
+    background-image: url(images/titlebackground.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    padding: 100px;
+    margin: auto;
+    text-align: center;
+} */
