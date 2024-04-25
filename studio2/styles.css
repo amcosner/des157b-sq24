@@ -1,6 +1,94 @@
 body {
     background-image: url(images/oranges.png);
-    background-size: 130vh;
+    background-size: 100%;
+}
+
+@font-face{
+    font-family: "Magazine-Letters";
+    src: url(font/MagazineLetterByBrntlbrnl-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Lucida-Console";
+    src: url(font/LUCON.TTF);
+}
+
+h1 {
+    font-family: "Magazine-Letters";
+    font-size: 5em;
+    margin-left: 425px;
+    color: black;
+    font-weight: 400;
+    /* borrowed this text stroke technique from https://css-tricks.com/adding-stroke-to-web-text/ */
+    text-shadow:
+    -8px -8px 0 white,
+     0   -8px 0 white,
+     8px -8px 0 white,
+     8px  0   0 white,
+     8px  8px 0 white,
+     0    8px 0 white,
+    -8px  8px 0 white,
+    -8px  0   0 white;
+}
+
+#container {
+    display: flex;
+    gap: 270px;
+}
+
+#intro {
+    transform: rotate(-1deg);
+}
+
+#instruction{
+    transform: rotate(3deg);
+}
+
+/* #characters {
+    background-image: url(images/characters.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    padding: 300px 200px 200px 300px;
+    margin-top: -600px;
+} */
+
+#characters {
+    z-index: 0;
+    margin-top: -600px;
+    margin-left: 900px;
+}
+
+#btns {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-top: -100px;
+    /* margin-left: 10px; */
+}
+
+button {
+    font-family: "Lucida-Console";
+    background-color: #ECFFD3;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border-style: none;
+    transition: all 400ms ease;
+}
+
+button:hover {
+    background-color: #BCEEF0;
+  }
+
+#one, #four, #seven {
+    transform: rotate(-5deg)
+}
+
+#two, #five {
+    transform: rotate(1deg)
 }
 
 #characters {
@@ -8,10 +96,30 @@ body {
     background-size: 130vh;
 }
 
+#text {
+    display: flex;
+    flex-direction:column;
+    width: 40%;
+}
+
 p {
-    padding: 60px;
+    font-family: "Lucida-Console";
+    font-weight: 400;
+    font-size: 20px;
+    padding: 30px 45px 30px 45px;
     background-color: white;
+    text-align: center;
     color: black;
+    /* margin-left: 800px; */
+}
+
+.hidden {
+    opacity: 0%;
+    z-index: -2;
+}
+
+.showing {
+    opacity: 100%;
 }
 
 /* h1 {
