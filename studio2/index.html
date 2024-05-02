@@ -11,18 +11,24 @@
 <body>
     <h1>joy diary!</h1>
     <div id="container">
-        <section id="btns">
-            <button id="one">04/15</button>
-            <button id="two">04/16</button>
-            <button id="three">04/17</button>
-            <button id="four">04/19</button>
-            <button id="five">04/20</button>
-            <button id="six">04/21</button>
-            <button id="seven">04/22</button>
-        </section>
+        <nav id="btns">
+            <ul>
+                <li><button id="one">04/15</button></li>
+                <li><button id="two">04/16</button></li>
+                <li><button id="three">04/17</button></li>
+                <li><button id="four">04/19</button></li>
+                <li><button id="five">04/20</button></li>
+                <li><button id="six">04/21</button></li>
+                <li><button id="seven">04/22</button></li>
+            </ul>
+        </nav>
         <section id="text" class="showing">
             <p id="intro">I wrote down things I did this week that weren't related to school or work :)</p>
             <p id="instructions">Click on a date to learn more!</p>
+        </section>
+        <section id="entry" class="hidden">
+            <img src="#" alt="picture of related task" id="pic" class="hidden"></a>
+            <p id="writing" class="hidden"></p>
         </section>
     </div>
     <img id="characters" src="images/characters.png" alt="silly doodles of characters" width="520" height="693">
