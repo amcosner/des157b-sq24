@@ -36,13 +36,50 @@ h1 {
     gap: 270px;
 }
 
-#intro {
-    transform: rotate(-1deg);
+#frame img {
+    position: absolute;
+    z-index: 5;
+    margin-top: -270px;
+    margin-left: 293px;
+    transform:rotate(-4deg);
 }
 
-#instruction{
-    transform: rotate(3deg);
+#frame #paper {
+    z-index: 1;
+    margin-top: -594px;
+    margin-left: 254px;
 }
+
+#frame h3 {
+    position:absolute;
+    z-index: 8;
+    font-family: "Magazine-Letters";
+    font-weight: 400;
+    font-size: 3.5em;
+    color: black;
+    margin-left: -128px;
+    margin-right: 963px;
+    transform: translate(841px, -346px);
+}
+
+#frame #text {
+    position:absolute;
+    z-index: 8;
+    margin-left: -128px;
+    margin-right: 963px;
+    transform: translate(840px, -239px);
+    
+    /* margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px; */
+}
+
+/* #intro {
+} */
+
+/* #instruction{
+    transform: rotate(3deg);
+} */
 
 /* #characters {
     background-image: url(images/characters.png);
@@ -54,19 +91,27 @@ h1 {
 } */
 
 #characters {
-    z-index: 0;
-    margin-top: -600px;
-    margin-left: 900px;
+    position: absolute;
+    z-index: 3;
+    margin-top: -278px;
+    margin-left: 925px;
 }
 
 #btns {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
     font-size: 20px;
     margin-left: 80px;
     margin-top: -100px;
-    /* margin-left: 10px; */
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+ul li {
+    list-style-type: none;
+    justify-content: space-around;
 }
 
 button{
@@ -83,32 +128,32 @@ button:hover {
     background-color: #BCEEF0;
   }
 
-#one, #four, #seven {
+#one, #three, #five, #seven {
     transform: rotate(-5deg)
 }
 
-#two, #five {
+#two, #four, #six {
     transform: rotate(1deg)
 }
 
-#characters {
-    background-color: url(images/characters.png);
+/* #characters {
+    background-image: url(images/characters.png);
     background-size: 130vh;
-}
+} */
 
-#text {
+/* #text {
     display: flex;
     flex-direction:column;
     width: 40%;
-}
+} */
 
 p {
     font-family: "Lucida-Console";
     font-weight: 400;
     font-size: 20px;
-    padding: 30px 45px 30px 45px;
-    background-color: white;
-    text-align: center;
+    /* padding: 30px 45px 30px 45px;
+    background-color: white; */
+    /* text-align: center; */
     color: black;
     /* margin-left: 800px; */
 }

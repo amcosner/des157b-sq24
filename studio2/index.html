@@ -10,27 +10,34 @@
 </head>
 <body>
     <h1>joy diary!</h1>
+    <img id="characters" src="images/characters.png" alt="silly doodles of characters" width="520" height="693">
+
     <div id="container">
         <nav id="btns">
             <ul>
-                <li><button id="one">04/15</button></li>
-                <li><button id="two">04/16</button></li>
-                <li><button id="three">04/17</button></li>
-                <li><button id="four">04/19</button></li>
-                <li><button id="five">04/20</button></li>
-                <li><button id="six">04/21</button></li>
-                <li><button id="seven">04/22</button></li>
+                <li><button id="day1" class="point">04/15</button></li>
+                <li><button id="day2" class="point">04/16</button></li>
+                <li><button id="day3">04/17</button></li>
+                <li><button id="day4">04/18</button></li>
+                <li><button id="day5">04/19</button></li>
+                <li><button id="day6">04/20</button></li>
+                <li><button id="day7">04/21</button></li>
+                <li><button id="day8">04/22</button></li>
             </ul>
         </nav>
-        <section id="text" class="showing">
-            <p id="intro">I wrote down things I did this week that weren't related to school or work :)</p>
-            <p id="instructions">Click on a date to learn more!</p>
-        </section>
-        <section id="entry" class="hidden">
+    </div>
+
+        <div id="frame" class="showing">
+            <h3 id="title"></h3>
+            <img src="images/image0.png" id="placeholder" alt="mouse (the cat) looking at the camera" width="368" height="255"></img>
+            <!-- src="images/image1.png" alt="me sleeping" width="368" height="255" -->
+            <p id="text">I wrote down things I did this week that weren't related to school or work :) Click on a date to learn more!</p>
+            <img src="images/paper.png" id="paper" alt="pink paper" width="1069" height="850">
+        </div>
+        
+        <!-- <section id="entry" class="hidden">
             <img src="#" alt="picture of related task" id="pic" class="hidden"></a>
             <p id="writing" class="hidden"></p>
-        </section>
-    </div>
-    <img id="characters" src="images/characters.png" alt="silly doodles of characters" width="520" height="693">
+        </section> -->
 </body>
 </html>

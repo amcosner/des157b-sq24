@@ -1,92 +1,64 @@
-(function(){
+(function() {
     'use strict';
-    console.log('reading js')
-    const btns = document.querySelectorAll('button');
 
-    function hideStart(){
-        document.querySelector('#text').className = "hidden"
+    let globalData;
+
+    // getting data off json file
+    async function getData() {
+    const days = await fetch('data/days.json');
+    const myData = await days.json();
+    const values = Object.values(moreData);
+    console.log(values);
+    globalData = myData;
     }
 
-    document.querySelector('#one').addEventListener('click',function(event){
-        hideStart();
-    })
+    const btn = document.querySelector('button');
 
-    // if you need instructions again click on main text
-    document.querySelector('h1').addEventListener('click',function(event){
-        document.querySelector('#text').className = "showing"
-    })
-    
-        let globalData;
-    
-        async function getData() {
-            const myData = await fetch('data.json');
-            const data = await myData.json();
-            globalData = data;
-        
-            document.querySelector('nav ul').innerHTML = makeBtns(data);
-    
-            makeEvents();
-            
-            const firstDate = '04/15'; 
-            updateInterface(firstDate, globalData);
-        }
-    
-        function makeBtns(data){
-            let html = '';
-            const days = Object.keys(data['']);
-            console.log(daysOfWeek);
-            daysOfWeek.forEach(function(day){
-                html += `<li><button id="${day}">${day}</button></li>`;
-            });
-    
-            return html;
-        }
-    
-        function createEvents() {
-            const buttons = document.querySelectorAll('button');
-        
-            for (const button of buttons) {
-                button.addEventListener('click', function(event) {
-                    const day = event.target.id;
-                    updateInterface(day, globalData);
-    
-                    const songTitle = document.querySelector('#song h2');
-                    const img = document.querySelector('img');
-                    const songlink = document.getElementById('songlink');
-    
-                    songTitle.classList.remove('hidden');
-                    songTitle.classList.add('visible');
-                    img.classList.remove('hidden');
-                    img.classList.add('visible');
-    
-                    songlink.classList.remove('hidden');
-                    songlink.classList.add('visible');
-       
-                });
-    
+    async function showData(day) {
+        const data = await getData();
+        const frame = document.querySelector('#frame');
+        const placeholder = document.querySelector('#placeholder');
+        const title = document.querySelector('#title');
+        const text = document.querySelector('#text');
+
+        if (data && data[`day${day}`]) {
+            const deData = data[`day${day}`];
+            //tracker text
+            title.innerHTML = `${deData.date}`
+            // frame.innerHTML = `${deData.date}`
+            text.innerHTML = `${deData.description}`
+
+            //tracker image
+            if (deData.day == "04/15") {
+                placeholder.src = 'images/image1.png'; 
+            } else if (deData.day == "04/16") {
+                placeholder.src = 'images/image2.png'
+            } else if (deData.day == "04/17") {
+                placeholder.src = 'images/image3.png'
+            } else if (deData.day == "04/18") {
+                placeholder.src = 'images/image4.png'
+            } else if (deData.day == "04/19") {
+                placeholder.src = 'images/image5.png'
+            } else if (deData.day == "04/20") {
+                placeholder.src = 'images/image6.png'
+            } else if (deData.day == "04/21") {
+                placeholder.src = 'images/image7.png'
+            } else if (deData.day == "04/22") {
+                placeholder.src = 'images/image8.png'
+            } else {
+                placeholder.src = 'images/image0.png'; 
             }
-    
+        } else {
+            text.innerHTML = "data couldn't be retrieved";
+            placeholder.src = 'images/image0.png';
         }
-    
-        function updateInterface(day, jsonData){
-            console.log(jsonData);
-            const songTitle = document.querySelector('#song h2');
-            const img = document.querySelector('img');
-            const songlink = document.getElementById('songlink');
-    
-    
-            const { song, artist, link } = jsonData['Top Songs of the Week'][day];
-            songTitle.innerHTML = `${song} <br> by ${artist}`;
-        
-            const imageName = day.toLowerCase();
-            img.src = `images/${imageName}.jpg`; 
-            img.alt = `${day} cover`;
-    
-            songlink.href = link;
-            
+    }
+
+    btn.addEventListener('click', function(){
+        for (let i = 1; i <= 8; i++) {
+            const list = document.querySelector(`#day${i}`);
+            list.addEventListener('click', () => showData(i));
         }
-    
-    
-        getData();
-    
-})();
+    })
+      
+})()
