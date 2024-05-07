@@ -66,7 +66,7 @@ h1 {
     position:absolute;
     z-index: 8;
     margin-left: -128px;
-    margin-right: 963px;
+    margin-right: 974px;
     transform: translate(840px, -239px);
     
     /* margin-left: 100px;
@@ -106,27 +106,13 @@ h1 {
 nav ul {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 40px;
 }
 
 ul li {
     list-style-type: none;
     justify-content: space-around;
 }
-
-button{
-    font-family: "Lucida-Console";
-    background-color: #ECFFD3;
-    font-weight: 400;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    border-style: none;
-    transition: all 400ms ease;
-}
-
-button:hover {
-    background-color: #BCEEF0;
-  }
 
 #one, #three, #five, #seven {
     transform: rotate(-5deg)
@@ -135,6 +121,22 @@ button:hover {
 #two, #four, #six {
     transform: rotate(1deg)
 }
+
+a{
+    font-family: "Lucida-Console";
+    background-color: #ECFFD3;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border-style: none;
+    text-decoration: none;
+    color: black;
+    transition: all 400ms ease;
+}
+
+a:hover {
+    background-color: #BCEEF0;
+  }
 
 /* #characters {
     background-image: url(images/characters.png);

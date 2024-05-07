@@ -1,41 +1,49 @@
 {
     "day1": {
         "date": "04/15",
-        "description": "Today I hung out with my housemates's cat, Mouse. She's usually a menace and always screams for attention, but today she was in the mood for a nap. I was tired and fell asleep with her on the couch (shout out to April for the picture)."
+        "description": "Today I hung out with my housemates's cat, Mouse. She's usually a menace and always screams for attention, but today she was in the mood for a nap. I was tired and fell asleep with her on the couch (shout out to April for the picture).",
+        "picid": 1
     },
 
     "day2": {
         "date": "04/16",
-        "description": "I really love collecting things, and my latest obsession has been keychains. I have an embarrassing amount and decided to organize them by color so it's easier to find the ones I want to use."
+        "description": "I really love collecting things, and my latest obsession has been keychains. I have an embarrassing amount and decided to organize them by color so it's easier to find the ones I want to use.",
+        "picid": 2
     },
 
     "day3": {
         "date": "04/17",
-        "description": "I sat in the arboretum today and journaled! It felt nice to sit in the shade and be surrounded by birds/natural ambience. It was peaceful, aside from suffering from the most intense allergies."
+        "description": "I sat in the arboretum today and journaled! It felt nice to sit in the shade and be surrounded by birds/natural ambience. It was peaceful, aside from suffering from the most intense allergies.",
+        "picid": 3
     },
 
     "day4": {
         "date": "04/18",
-        "description": "It was really hot today, so I made a frozen watermelon slushy drink with lime/mint sparkling water. I was pleasantly surprised with how this turned out!"
+        "description": "It was really hot today, so I made a frozen watermelon slushy drink with lime/mint sparkling water. I was pleasantly surprised with how this turned out!",
+        "picid": 4
     },
 
     "day5":{
         "date": "04/19",
-        "description": "My housemates and I deep cleaned our blackhole of a fridge and threw out all of the stuff that was expired/forgotten about. This is the cleanest it's probably been in 2 years!"
+        "description": "My housemates and I deep cleaned our blackhole of a fridge and threw out all of the stuff that was expired/forgotten about. This is the cleanest it's probably been in 2 years!",
+        "picid": 5
     },
 
     "day6":{
         "date": "04/20",
-        "description": "I collect a (concerning amount of) CDs because I'm a huge nerd when it comes to CD design and I like collecting physical media for my radio show. Today I listened to some of the new CDs I bought."
+        "description": "I collect a (concerning amount of) CDs because I'm a huge nerd when it comes to CD design and I like collecting physical media for my radio show. Today I listened to some of the new CDs I bought.",
+        "picid": 6
     },
 
     "day7":{
         "date": "04/21",
-        "description":  "Lately I've been in a childhood-nostalgia phase, so I've been rewatching a lot of shows that I enjoyed when I was 12. Right now I'm rewatching soul eater!"
+        "description":  "Lately I've been in a childhood-nostalgia phase, so I've been rewatching a lot of shows that I enjoyed when I was 12. Right now I'm rewatching soul eater!",
+        "picid": 7
     },
 
     "day8":{
         "date": "04/22",
-        "description": "I met up with a friend today because they wanted to give me an early birthday present. They got me this cute orange bunny keychain! I love him!!"
+        "description": "I met up with a friend today because they wanted to give me an early birthday present. They got me this cute orange bunny keychain! I love him!!",
+        "picid": 8
     }
 }
