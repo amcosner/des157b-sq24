@@ -2,13 +2,14 @@
 (function(){
     'use strict';
 
-
+// taking data out of json file
     async function getData(){
         const myData = await fetch('data/days.json');
         const data = await myData.json();
         const values = Object.values(data);
         console.log(values);
-   
+        
+        // allowing you to click on links
         const entries = document.querySelectorAll('nav ul li a');
         entries.forEach(function(eachEntry){
             eachEntry.addEventListener('click', function(event){
@@ -19,7 +20,7 @@
         });  
     }
 
-
+    // updating each entry with data for that day
     function outputHTML(data){
         const frame = document.querySelector("#frame")
         frame.innerHTML =
@@ -30,7 +31,6 @@
     }
    
     getData();
-
 
 })();
 
