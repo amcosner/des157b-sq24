@@ -1,0 +1,50 @@
+body {
+    background-image: url(images/apartment.png);
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    overflow-x: scroll;
+}
+
+h1 {
+    font-family:"Rubik Bubbles", system-ui;
+    font-weight: 400;
+    font-size: 4em;
+    color: white;
+    text-align: center;
+     /* borrowed this text stroke technique from https://css-tricks.com/adding-stroke-to-web-text/ */
+     text-shadow:
+    -1px -1px 0 black,
+     0   -1px 0 black,
+     1px -1px 0 black,
+     1px  0   0 black,
+     1px  1px 0 black,
+     0    1px 0 black,
+    -1px  1px 0 black,
+    -1px  0   0 black;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+p{
+    font-family:"Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+#instructions {
+    background-color: rgb(255 255 255 / 50%);
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+#con, #cookie {transform:rotate(-8deg);}
+#angel, #mouse { transform:rotate(7deg);}
+#me {transform:rotate(3deg);}
