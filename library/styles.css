@@ -130,9 +130,17 @@ p{
     margin-right: 500px;
 }
 
-/* li:hover {
+footer {
+    margin-left: 40px;
+    font-family:"Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    color: black;
+}
 
-} */
+footer a {
+    color: gray;
+}
 
 .hidden {
     opacity: 0%;
