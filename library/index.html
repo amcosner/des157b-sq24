@@ -9,20 +9,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
-    <!-- css animation Library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- css library (for icon) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple-icons/siimple-icons.css" />
     <link href="styles.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery.simplyscroll.js"></script>
     <script src="script.js" defer></script>
 </head>
 <body>
     <h1>who's in my apartment?</h1>
     <p id="instructions">click on someone to learn more!</p>
     <div id="container">
+        <nav id="btns">
+            <ul>
+                <li id="con"><a href="0"><img src="images/image-1.png" alt="handdrawn sticker of my friend, Con" width="250" height="250"></a></li>
+                <li id="angel"><a href="1"><img src="images/image-2.png" alt="handdrawn sticker of my friend, Angel" width="250" height="250"></a></li>
+                <li id="alyssa"><a href="2"><img src="images/image-3.png" alt="handdrawn sticker of me, Alyssa" width="250" height="250"></a></li>
+                <li id="cookie"><a href="3"><img src="images/image-4.png" alt="handdrawn sticker of my friend, Cookie" width="250" height="250"></a></li>
+                <li id="mouse"><a href="4"><img src="images/image-5.png" alt="handdrawn sticker of my friend, Mouse" width="250" height="250"></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="frame" class="hidden">
+        <i class="si-x-square"></i>
+        <!-- <p id="x">x</p> -->
+        <h3 id="title"></h3>
+        <img>
+        <p id="text"></p>
+    </div>
+    <!-- <div id="container">
         <img id="con" src="images/conn.png" alt="handdrawn sticker of my friend, Con" width="250" height="250">
         <img id="angel" src="images/angel.png" alt="handdrawn sticker of my friend, Angel" width="250" height="250">
         <img id="me" src="images/me.png" alt="handdrawn sticker of me" width="250" height="250">
         <img id="cookie" src="images/cookie.png" alt="handdrawn sticker of our cat, Cookie" width="250" height="250">
         <img id="mouse" src="images/mouse.png" alt="handdrawn sticker of our cat, Mouse" width="250" height="250">
-    </div>
+    </div> -->
+    <!-- js library for scrolling -->
+    <script>
+        SweetScroll.create({
+          header: '',
+          trigger: 'a[href^="#"]',
+        }, '#container');
+      </script>
 </body>
 </html>

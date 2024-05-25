@@ -1,0 +1,31 @@
+{
+    "user1": {
+        "name": "Con",
+        "description": "Hi, I'm Con. I'm a 23 year old working at a cat clinic. I like watching stupid/funny shows with my housemates and usually spend lots of time with my cats, Cookie and Mouse! I enjoy watching GMM, sonic, One Piece, and more with my partner. Some of my hobbies include: drawing, arts & crafts, and learning how to tattoo. Fun fact: I have over 40 tattoos!",
+        "picid": 1
+    },
+
+    "user2": {
+        "name": "Angel",
+        "description": "Hi, I'm Angel. I'm a 27 year old student and English tutor. I really love spending time with my partner, Con, and spend a lot of my time playing video games (I like Resident Evil, sonic games, Katamari, and more!) I like listening to music and watching one of my favorite shows, Delicious in Dungeon. Fun fact: I fractured my elbow twice.",
+        "picid": 2
+    },
+
+    "user3": {
+        "name": "Alyssa",
+        "description": "Hi, I'm Alyssa. I'm a 22 year old student and designer. I love third wheeling Con and Angel (genuinely not sarcastic, they're my bffs). Some of my hobbies are: designing things, drawing, putting together music sets for my radio show, going on walks, collecting things I don't need, and making keychains. Fun fact: Ravyn Lenae recently performed using a stage graphic I helped create!",
+        "picid": 3
+    },
+
+    "user4": {
+        "name": "Cookie",
+        "description": "Hi, I'm Cookie. I'm a 2 year old mystery breed cat (but probably main coon and ragamuffin because I am huge). I like having my own space and really dislike pets and physical attention, but I enjoy hanging out with people and staring deeply into walls. I love pretending like I'm a good hunter but I'm terrified of bugs. My favorite toy is a giant catnip carrot.",
+        "picid": 4
+    },
+
+    "user5":{
+        "name": "Mouse",
+        "description": "Hi, I'm Mouse. I'm a 1 year old mystery breed cat (but probably a shorthair, ragamuffin mix because I am small and fluffy). Everyone refers to me either as a dog or a monster because I am both! I always scream for pets, need attention constantly, and love to sit on people's laps. It is my daily goal to give people no personal space. I have to play 24/7 or I will die! Also I hate Cookie <3",
+        "picid": 5
+    }
+}
