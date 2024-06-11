@@ -1,0 +1,482 @@
+@font-face{
+    font-family:"Computers Heart";
+    src:url(fonts/ComputersHeart.ttf);
+}
+
+@font-face{
+    font-family:"Pixelary";
+    src:url(fonts/Pixelary.otf);
+}
+
+@font-face{
+    font-family:"PixelDistortion";
+    src:url(fonts/PixelDistortion.ttf);
+}
+
+@font-face{
+    font-family:"AutumnPixels";
+    src:url(fonts/AutumnPixels.ttf);
+}
+
+@font-face{
+    font-family:"LEDLIGHT";
+    src:url(fonts/LEDLIGHT.otf);
+}
+
+@font-face{
+    font-family:"Pixelite";
+    src:url(fonts/PIXELITE.FON);
+}
+
+@font-face{
+    font-family:"Pixelmix";
+    src:url(fonts/pixelmix.ttf);
+}
+
+@font-face{
+    font-family:"Pixelmix Bold";
+    src:url(fonts/pixelmix/pixelmix_bold.ttf);
+}
+
+@font-face {
+    font-family:"Play";
+    src:url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Play-Regular.eot") format("eot"),
+        url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Play-Regular.woff") format("woff"),
+        url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Play-Regular.ttf") format("truetype"),
+        url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Play-Regular.svg#Play") format("svg");
+    font-weight:normal;
+    font-style:normal;
+  }
+
+body{
+    background-image: url(images/background3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 0%;
+    cursor: url('images/cursor.png'), auto;
+    width: 0px;
+    height: 0px;
+}
+
+main{
+    display: flex;
+    height: 15em;
+    width: 28em;
+    position: absolute;
+    background-image: url(images/introscreen.png);
+    border: 3px solid #6d6d6d;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+    margin-top: 4rem;
+    flex-direction: column;
+    justify-content:center;
+    /* padding: 90px;*/
+}
+
+h1{
+    font-family:"LEDLIGHT";
+    color: black;
+    position: relative;
+    font-size: 2.9em;
+    text-align: center;
+    /* margin-top:  -0.8em;
+    margin-bottom: 0; */
+    top:-10%;
+    /* letter-spacing: 5px; */
+    font-weight: 400;
+}
+
+.signature{
+    font-family: "Pixelary";
+    position: absolute;
+    left: 1%;
+    bottom: 1%;
+    font-size: 35px;
+    color: #000000;
+    background-color: white;
+    text-shadow: none;
+}
+
+.sources{
+    font-family: "Pixelary";
+    position: absolute;
+    left: 90%;
+    bottom: 1%;
+    font-size: 35px;
+    color: #000000;
+    background-color: white;
+    text-shadow: none;
+}
+
+.enterneem{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-family: "Computers Heart";
+    position: absolute;
+    left: 34%;
+    bottom: 37%;
+    font-size: 30px;
+}
+
+.name{
+    font-size: 20px;
+    background-color: transparent;
+    margin-top: 1rem;
+    z-index: 2;
+    font-family:"Pixelmix";
+}
+
+.btn {
+    font-family: "AutumnPixels";
+    position: absolute;
+    display: inline-block;
+    text-transform: uppercase;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px gray;
+    /* Lots of padding, rectangle, rounded corners */
+    /* padding-top: -1em; */
+    padding-bottom: 0.5em;
+    background: -webkit-linear-gradient(left, transparent, #AEAFAE, transparent);
+    /* border: 0px;x
+    border-bottom: 3px solid;
+    -o-border-image: linear-gradient(to right, transparent , rgba(255, 255, 255, 0.2), transparent);
+       border-image: linear-gradient(to right, transparent , rgba(255, 255, 255, 0.2), transparent);
+    border-image-slice: 1;
+    border-top: 3px solid; */
+    left: 39%;
+    bottom:23%;
+    cursor: url('images/cursor.png'), auto;
+  }
+
+  .btn2 {
+    font-family: "AutumnPixels";
+    position: absolute;
+    display: inline-block;
+    text-transform: uppercase;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px gray;
+    /* Lots of padding, rectangle, rounded corners */
+    padding-block: 0;
+    padding-inline: 0;
+    background: -webkit-linear-gradient(left, transparent, #AEAFAE, transparent);
+    border: 0px;
+    /* border-bottom: 3px solid;
+    -o-border-image: linear-gradient(to right, transparent , rgba(255, 255, 255, 0.2), transparent);
+       border-image: linear-gradient(to right, transparent , rgba(255, 255, 255, 0.2), transparent);
+    border-image-slice: 1;
+    border-top: 3px solid; */ 
+    left: 49%;
+    bottom:13%;
+    cursor: url('images/cursor.png'), auto;
+}
+
+#next2 {
+    font-family: "AutumnPixels";
+    position: absolute;
+    display: inline-block;
+    text-transform: uppercase;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px gray;
+    /* Lots of padding, rectangle, rounded corners */
+    padding-block: 0;
+    padding-inline:0;
+    background: -webkit-linear-gradient(left, transparent, #AEAFAE, transparent);
+    border: 0px;
+    left: 49%;
+    bottom:13%;
+    cursor: url('images/cursor.png'), auto;
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.show{
+    visibility: visible;
+    opacity: 1;
+}
+
+button{
+    cursor: url('images/cursor.png'), auto;
+}
+
+#overlay{
+    background-image: linear-gradient(#f9f9f9, #f8f8f8);
+    border: 3px solid #6d6d6d;
+    border-radius: 8px;
+    position:absolute;
+    z-index:0;
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 15em;
+    width: 27.9em;
+    top: 0;
+    left: 0;
+}
+
+#overlay p{
+    font-family: "Pixelmix";
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    display: block;
+    justify-content: right;
+    padding-right:100px;
+    color:black;
+    line-height: 40px;
+    font-size: 30px;
+    text-shadow: none;
+}
+
+#titlepage{
+    z-index: 0;
+}
+
+/* audio styling  */
+audio::-webkit-media-controls-panel {
+    background-color:#cadde2;
+    border: 1px solid #503C29;
+    color: black;
+}
+audio::-webkit-media-controls-mute-button {
+    background-color: #cadde2;
+    border-radius: 0;
+}
+audio::-webkit-media-controls-volume-slider-container{background-color: #f8f8f8;}
+audio::-webkit-media-controls-enclosure {border-radius: 0;}
+audio::-webkit-media-controls-timeline-container{color: black;}
+audio::-webkit-media-controls-play-button{color: black;}
+
+audio {
+    height:70px;
+    width: 200px;
+    margin: 0 auto;
+    position: absolute;
+    top: 95%;
+    left: 68%;
+    z-index: 1;
+}
+/* audio styling end */
+  
+.unis{
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: 60%;
+    left: 37%;
+}
+
+.unis button{
+    background-color:#6d6d6d;
+    font-size: 30px;
+    color: #f8f8f8;
+    font-family: "Pixelmix";
+    text-transform: uppercase;
+    padding: 7px;
+}
+
+.unis button:hover{
+    background-color:#cadde2;
+    color: #413620;
+}
+
+#overlay1{
+    background-image: linear-gradient(#f9f9f9, #f8f8f8);
+    border: 3px solid #6d6d6d;
+    border-radius: 8px;
+    position:absolute;
+    z-index:0;
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 15em;
+    width: 27.9em;
+    top: 0;
+    left: 0;
+}
+
+#overlay2{
+    background-image: linear-gradient(#f9f9f9, #f8f8f8);
+    border: 3px solid #6d6d6d;
+    border-radius: 8px;
+    position:absolute;
+    z-index:0;
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 15em;
+    width: 27.9em;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#overlay3{
+    background-image: linear-gradient(#f9f9f9, #f8f8f8);
+    border: 3px solid #6d6d6d;
+    border-radius: 8px;
+    position:absolute;
+    z-index:0;
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 15em;
+    width: 27.9em;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#overlay2, #overlay3 {
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+#overlay2::-webkit-scrollbar, #overlay3::-webkit-scrollbar {
+    display: none; /* Hide scroll bar in WebKit browsers (Chrome, Safari) */
+}
+
+#overlay1 p{
+    font-family: "Pixelmix";
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    display: block;
+    justify-content: right;
+    padding-right:100px;
+    color:black;
+    line-height: 40px;
+    font-size: 30px;
+    text-shadow: none;
+}
+
+.dys_bkg{
+    width: 1060px;
+    max-width: 100%;
+    /* margin-right: auto;
+    margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    overflow: hidden; */
+}
+
+#items{
+    position: absolute;
+    top: 94%;
+    left: 12%;
+}
+
+#items img{
+    height: 1.5em;
+    width:1.5em;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding:7px;
+    margin: 5px;
+}
+
+#starbutt{
+    background-color:#c7b39f;
+}
+
+#nootbook{
+    background-color: #cadde2;
+}
+
+/* .explain{
+    display: flex;
+} */
+
+.charas{
+    display: flex;
+    position: absolute;
+    top: 11%;
+    padding-left: 90px;
+    transition: 1s ease;
+}
+
+.charas img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.05);
+    transition: 1s ease;
+    }
+
+.charas2{
+    display: flex;
+    position: absolute;
+    top: 11%;
+    padding-left: 5px;
+    transition: 1s ease;
+}
+
+.charas2 img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.05);
+    transition: 1s ease;
+    }
+
+.welcome{
+    display: none;
+}
+
+main section{
+    background-image: linear-gradient(#f9f9f9, #f8f8f8);
+    border: 3px solid #6d6d6d;
+    border-radius: 8px;
+    position:absolute;
+    z-index:0;
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 15em;
+    width: 27.9em;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.container{
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.766);
+    flex-direction: row;
+    top: 47%;
+    left: 0%;
+    font-family: "Pixelmix";
+    font-size: 25px;
+    margin-top: -5em;
+}
+
+.container p{
+    margin-top: 10px;
+}
+
+#meetALKIE{
+    background: url(images/dystopia.png);
+}
+
+.movealkie{
+    position: absolute;
+    left: 30%;
+    bottom: -30%;
+}
+
